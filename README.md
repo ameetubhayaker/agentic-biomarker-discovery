@@ -6,7 +6,7 @@
 > Grounding Paradox"), and whether a knowledge graph layer can recover what dense
 > retrieval misses.
 
-## TL;DR
+## Results Summary
 
 | Finding | Headline number |
 |---|---|
