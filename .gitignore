@@ -1,0 +1,52 @@
+# ─── Data files — never commit BioASQ corpus to a public repo ─────────────
+data/
+*.json
+!**/notebooks/**/*.json   # allow JSON inside notebook outputs (which is fine)
+*.zip
+
+# Allow well-known small JSON config files (none currently, but safe default)
+!package.json
+!tsconfig.json
+
+# ─── Secrets ──────────────────────────────────────────────────────────────
+.env
+.env.*
+*.key
+*_secret*
+*_credentials*
+
+# ─── Python ───────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# ─── Jupyter ──────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# ─── Model & index caches ─────────────────────────────────────────────────
+*.pkl
+*.faiss
+*.index
+embeddings_cache/
+.huggingface/
+
+# ─── OS / editor ──────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
